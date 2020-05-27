@@ -21,4 +21,12 @@ This little script will let you play music using just dmenu, youtube-dl and mpv
      ```static const char *dmusisk[] = { "dmusick", "-m", dmenumon, "-fn", dmenumon, "-nb", col_gray1, "-nf", col_gray2, "-sb", col_gray1, "-sf", col_gray2, "-p", "♬ ", NULL };```<br />
       and invoke it with a keybinding of your choice <br />
       ```{ MODKEY,                       XK_c,      spawn,          {.v = dmusick   } },```<br />
-      
+  
+  
+  # Screenshots: 
+  
+ ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-05.png.png)
+ ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-23.png.png)
+ ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-37.png.png)
+ ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-54.png.png)
+
