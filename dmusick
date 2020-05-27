@@ -1,7 +1,19 @@
-# Put here your favorite artists/songs
+#!/bin/bash
 
-FNORD=`echo | dmenu "$@" -p ♫`
+# dmusick_path / History
+cachedir="${XDG_CACHE_HOME:-"$HOME/.cache"}"
+cache="$cachedir/dmusick"
+
+[ ! -e "$cachedir" ] && mkdir -p "$cachedir"
+[ ! -e "$cache" ] && touch "$cache"
 
 
+if [ ! -s "$cache" ]; then
+        FNORD=`echo | dmenu "$@" -p ♫`
+else
+        FNORD=`cat $cache | dmenu "$@" -p ♫`
+fi
+
+echo "$FNORD" >> $cache
 youtube-dl --rm-cache-dir -o - -q "ytsearch: $FNORD" | mpv --quiet --really-quiet - & disown
 
