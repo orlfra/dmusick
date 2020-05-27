@@ -1,0 +1,5 @@
+# This little script has no license
+FNORD=`dmenu_path | dmenu "$@" -p ♫`
+
+youtube-dl --rm-cache-dir -o - -q "ytsearch: $FNORD" | mpv --quiet --really-quiet - & disown
+
