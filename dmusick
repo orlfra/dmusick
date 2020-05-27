@@ -12,5 +12,6 @@ else
         FNORD=`sort $cache | uniq | dmenu "$@" -p ♫`
 fi
 
+
+[ ! -z "$FNORD" ] && youtube-dl --rm-cache-dir -o - -q "ytsearch: $FNORD" | mpv --quiet --really-quiet - & disown
 echo "$FNORD" >> $cache
-youtube-dl --rm-cache-dir -o - -q "ytsearch: $FNORD" | mpv --quiet --really-quiet - & disown
