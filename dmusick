@@ -11,9 +11,10 @@ cache="$cachedir/dmusick"
 if [ ! -s "$cache" ]; then
         FNORD=`echo | dmenu "$@" -p ♫`
 else
-        FNORD=`cat $cache | dmenu "$@" -p ♫`
+        FNORD=`sort $cache | uniq | dmenu "$@" -p ♫`
 fi
 
 echo "$FNORD" >> $cache
+sort $cache | uniq > $cache
 youtube-dl --rm-cache-dir -o - -q "ytsearch: $FNORD" | mpv --quiet --really-quiet - & disown
 
