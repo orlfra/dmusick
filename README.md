@@ -25,8 +25,8 @@ This little script will let you play music using just dmenu, youtube-dl and mpv
   
   # Screenshots: 
   
- ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-05.png.png)
- ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-23.png.png)
- ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-37.png.png)
- ![](https://github.com/veryown/dmusick/blob/master/27May_12-07-54.png.png)
+ ![](https://github.com/ricchione/dmusick/blob/master/27May_12-07-05.png.png)
+ ![](https://github.com/ricchione/dmusick/blob/master/27May_12-07-23.png.png)
+ ![](https://github.com/ricchione/dmusick/blob/master/27May_12-07-37.png.png)
+ ![](https://github.com/ricchione/dmusick/blob/master/27May_12-07-54.png.png)
 
