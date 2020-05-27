@@ -14,9 +14,9 @@ This little script will let you play music using just dmenu, youtube-dl and mpv
     ```$ sudo cp dmusick /usr/bin```
   
   # Usage 
-   from terminal
-      ```$ dmusick```
-   or as I prefer invoke it from your wm's config 
+   from terminal<br />
+      ```$ dmusick```<br />
+   or as I prefer invoke it from your wm's config <br />
      Example with dwm (savedconfig or config.h or whatever): <br />
      ```static const char *dmusisk[] = { "dmenu_musick", "-m", dmenumon, "-fn", dmenumon, "-nb", col_gray1, "-nf", col_gray2, "-sb", col_gray1, "-sf", col_gray2, "-p", "♬ ", NULL };```<br />
      and invoke it with a keybinding of your choice <br />
