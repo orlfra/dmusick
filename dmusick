@@ -1,5 +1,7 @@
-# Bill gates
-FNORD=`dmenu_path | dmenu "$@" -p ♫`
+# Put here your favorite artists/songs
+
+FNORD=`echo | dmenu "$@" -p ♫`
+
 
 youtube-dl --rm-cache-dir -o - -q "ytsearch: $FNORD" | mpv --quiet --really-quiet - & disown
 
