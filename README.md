@@ -11,6 +11,7 @@ This little script will let you play music using just dmenu, youtube-dl and mpv
  
   Put dmusick into your /usr/bin directory (or whatever directory intended for binaries) <br />
     ```$ git clone https://github.com/veryown/dmusick && cd dmusick``` <br />
+    ```$ chmod ugo+x dmusick``` <br />
     ```$ sudo cp dmusick /usr/bin```
   
   # Usage 
